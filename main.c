@@ -100,6 +100,7 @@ int __attribute__ ((section (".text.startup"))) main(void)
 	extract_e820();
 	setup_mptable();
 	extract_smbios();
+	printf("vmfwupdate:test string");
 	boot_from_fwcfg();
 	panic();
 }
